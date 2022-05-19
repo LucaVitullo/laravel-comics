@@ -8,12 +8,13 @@
             </div>
             <div class="container-bg-main-bottom">
                 <div class="content-dc-series">
-                    @foreach ($comics as $comic)
+
+                    @foreach ($comics as $id => $comic)
                         <div class="card-fumetto">
-
-                            <img src="{{ $comic['thumb'] }}" alt="img">
-                            <p>{{ $comic['series'] }}</p>
-
+                            <a href="/card{{ $id }}">
+                                <img src="{{ $comic['thumb'] }}" alt="img">
+                                <p>{{ $comic['series'] }}</p>
+                            </a>
                         </div>
                     @endforeach
 

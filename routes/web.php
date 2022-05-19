@@ -24,3 +24,10 @@ Route::get('/', function () {
 
     return view('main', ["comics" => $comics]);
 });
+
+Route::get('card{id}', function ($id) {
+
+    $comics = @include "../config/comics.php";
+
+    return view('/partials/singleCard', ["comics" => $comics[$id]]);
+});
