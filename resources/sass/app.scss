@@ -281,20 +281,32 @@
         bottom: 15px;
         left: 80px;
         width: 10%;
+
+    }
+
+    .view-gallery {
+        position: absolute;
+        bottom: 15px;
+        left: 80px;
+        width: 10%;
+        background-color: #0282f9;
+        color: white;
+        border: 1px solid white;
+        cursor: pointer;
     }
 }
 
-.section-main {
+.section-main-1 {
     display: flex;
 
-    padding: 5% 20%;
+    padding: 5% 15%;
 
 
     .container-infoCard {
         display: flex;
         flex-direction: column;
         justify-content: center;
-        align-items: center;
+        align-items: flex-start;
 
         h2 {
             font-style: italic;
@@ -316,6 +328,7 @@
                 padding: 10px;
                 display: flex;
                 justify-content: space-between;
+                align-items: center;
                 width: 70%;
                 border: 2px solid gray;
 
@@ -344,5 +357,96 @@
 
     .advertisement {
         margin-left: 20px;
+        position: relative;
+
+        span {
+            position: absolute;
+            top: 0;
+            right: 0;
+            font-weight: bold;
+            color: gray;
+        }
+
+        img {
+            margin-top: 18px;
+        }
+
     }
+}
+
+.section-main-2 {
+    display: flex;
+    background-color: #f6f6f6;
+    justify-content: center;
+    padding: 5% 15%;
+
+    .talent {
+
+        width: 60%;
+
+        h3 {
+            padding-bottom: 10px;
+            border-bottom: 1px solid black;
+        }
+
+        .talent-content {
+            display: flex;
+            flex-direction: column;
+            border-bottom: 1px solid grey;
+            padding: 5px;
+        }
+
+        .container-artists {
+            display: flex;
+            justify-content: space-around;
+
+            padding: 5px;
+            border-bottom: 1px solid grey;
+        }
+
+        .container-writers {
+            display: flex;
+            justify-content: space-between;
+            padding: 5px;
+        }
+
+        .art-by,
+        .writter-by {
+            width: 20%;
+        }
+
+        .artists,
+        .writers {
+            width: 80%;
+            color: #0282f9;
+        }
+    }
+
+    .specs {
+        width: 40%;
+        margin-left: 25px;
+
+        h3 {
+            padding-bottom: 10px;
+            border-bottom: 1px solid black;
+        }
+
+        .series,
+        .usprice,
+        .date {
+            display: flex;
+            padding: 10px 0px;
+            border-bottom: 1px solid grey;
+
+            .blue {
+                color: #0282f9;
+            }
+
+            p {
+                margin-right: 20px;
+            }
+        }
+    }
+
+
 }

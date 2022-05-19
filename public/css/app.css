@@ -271,49 +271,61 @@
   width: 10%;
 }
 
-.section-main {
-  display: flex;
-  padding: 5% 20%;
+.bg-blue .view-gallery {
+  position: absolute;
+  bottom: 15px;
+  left: 80px;
+  width: 10%;
+  background-color: #0282f9;
+  color: white;
+  border: 1px solid white;
+  cursor: pointer;
 }
 
-.section-main .container-infoCard {
+.section-main-1 {
+  display: flex;
+  padding: 5% 15%;
+}
+
+.section-main-1 .container-infoCard {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
 }
 
-.section-main .container-infoCard h2 {
+.section-main-1 .container-infoCard h2 {
   font-style: italic;
   margin-bottom: 10px;
 }
 
-.section-main .container-infoCard .bann-green {
+.section-main-1 .container-infoCard .bann-green {
   display: flex;
   justify-content: space-between;
   width: 100%;
   margin-bottom: 15px;
 }
 
-.section-main .container-infoCard .bann-green .price {
+.section-main-1 .container-infoCard .bann-green .price {
   background-color: #55ba59;
   display: inline;
   padding: 10px;
   display: flex;
   justify-content: space-between;
+  align-items: center;
   width: 70%;
   border: 2px solid gray;
 }
 
-.section-main .container-infoCard .bann-green .price .white {
+.section-main-1 .container-infoCard .bann-green .price .white {
   color: white;
 }
 
-.section-main .container-infoCard .bann-green .price .green {
+.section-main-1 .container-infoCard .bann-green .price .green {
   color: lightgreen;
 }
 
-.section-main .container-infoCard .bann-green .check-availability {
+.section-main-1 .container-infoCard .bann-green .check-availability {
   background-color: #55ba59;
   color: white;
   display: inline;
@@ -323,7 +335,97 @@
   border: 2px solid gray;
 }
 
-.section-main .advertisement {
+.section-main-1 .advertisement {
   margin-left: 20px;
+  position: relative;
+}
+
+.section-main-1 .advertisement span {
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-weight: bold;
+  color: gray;
+}
+
+.section-main-1 .advertisement img {
+  margin-top: 18px;
+}
+
+.section-main-2 {
+  display: flex;
+  background-color: #f6f6f6;
+  justify-content: center;
+  padding: 5% 15%;
+}
+
+.section-main-2 .talent {
+  width: 60%;
+}
+
+.section-main-2 .talent h3 {
+  padding-bottom: 10px;
+  border-bottom: 1px solid black;
+}
+
+.section-main-2 .talent .talent-content {
+  display: flex;
+  flex-direction: column;
+  border-bottom: 1px solid grey;
+  padding: 5px;
+}
+
+.section-main-2 .talent .container-artists {
+  display: flex;
+  justify-content: space-around;
+  padding: 5px;
+  border-bottom: 1px solid grey;
+}
+
+.section-main-2 .talent .container-writers {
+  display: flex;
+  justify-content: space-between;
+  padding: 5px;
+}
+
+.section-main-2 .talent .art-by,
+.section-main-2 .talent .writter-by {
+  width: 20%;
+}
+
+.section-main-2 .talent .artists,
+.section-main-2 .talent .writers {
+  width: 80%;
+  color: #0282f9;
+}
+
+.section-main-2 .specs {
+  width: 40%;
+  margin-left: 25px;
+}
+
+.section-main-2 .specs h3 {
+  padding-bottom: 10px;
+  border-bottom: 1px solid black;
+}
+
+.section-main-2 .specs .series,
+.section-main-2 .specs .usprice,
+.section-main-2 .specs .date {
+  display: flex;
+  padding: 10px 0px;
+  border-bottom: 1px solid grey;
+}
+
+.section-main-2 .specs .series .blue,
+.section-main-2 .specs .usprice .blue,
+.section-main-2 .specs .date .blue {
+  color: #0282f9;
+}
+
+.section-main-2 .specs .series p,
+.section-main-2 .specs .usprice p,
+.section-main-2 .specs .date p {
+  margin-right: 20px;
 }
 
